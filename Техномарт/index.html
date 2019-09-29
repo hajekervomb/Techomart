@@ -4,27 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>"Техномарт - интернет-магазин строительных метиралов и инструментов для ремонта"</title>
-  
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="main-header">
-    <div class="container">
-      <section class="user-toolkit">
-        <a href="#" class="logo"><h1>Техномарт</h1></a>
-        <form action="" class="search" method="get">
-          <input type="search" name="question" placeholder="Поиск">
-          <input type="submit" value="Найти">
-        </form>
-        <ul class="button-list">
-          <li class="button-item"><a href="#">Закладки</a></li>
-          <li class="button-item"><a href="#">Корзина</a></li>
-          <li class="button-item"><a href="#">Оформить заказ</a></li>
-        </ul>
-      </section>
-
+  <header class="main-header">
+      
+    <div class="main-header-wrapper">  
+      <div class="container">
+        <section class="user-toolkit">
+          <h1 class="logo"><a href="#">Техномарт</a></h1>
+          <form class="search-form" action="" class="search" method="get">
+            <input type="search" name="question" placeholder="Поиск">
+            <input class="visually-hidden" type="submit" value="Найти">
+          </form>
+          <ul class="button-list">
+            <li class="button-item button-item1"><a href="#">Закладки: 0</a></li>
+            <li class="button-item button-item2"><a href="#">Корзина: 0</a></li>
+            <li class="button-item button-item3"><a href="#">Оформить заказ</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>  
+    
       <section class="user-info">
         <h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
         <!-- Логотип трубки перед номером, добавить -->
@@ -61,10 +65,9 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
