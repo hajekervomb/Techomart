@@ -91,7 +91,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-
+.main-header {
+  width: 100%;
+  background-color: #f4f7f9;
+}
 
 .main-header h1 {
   width: 220px;
@@ -191,7 +194,70 @@ input[type="radio"].visually-hidden {
 	padding: 12px 0 12px 17px;
 	color: #fff;
 }
-	
-	
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}	
+	
+.description {
+  width: 205px;
+  padding-left: 50px;
+  line-height: 23px;
+  font-size: 16px;
+  font-style: italic;
+  color: #ee3643;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid black;
+}
 
+.about {
+   outline: 1px solid black;
+}
+
+.contacts {
+  position: relative;
+  outline: 1px solid black;
+  
+}
+
+.contacts a {
+  display: block;
+  width: 265px;
+  border: 3px solid #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.contacts a::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 19px;
+  height: 19px;
+  
+  background-image: url(../svg/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+}
+
+.user-link-list {
+  outline: 1px solid black;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
