@@ -94,6 +94,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   width: 100%;
   background-color: #f4f7f9;
+  margin-bottom: 60px;
 }
 
 .main-header h1 {
@@ -130,7 +131,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 }
 
-.main-header .container {
+.container {
   width: 940px;
   margin: 0 auto;
   
@@ -190,9 +191,16 @@ input[type="radio"].visually-hidden {
 }
 
 .header-buttons a {
-	display: block;
+  display: block;
+  color: #fff;
+}
+
+.header-buttons a:not(.ordering) {
 	padding: 12px 0 12px 17px;
-	color: #fff;
+}
+
+.header-buttons .ordering {
+  padding: 12px 0;
 }
 
 .about {
@@ -203,24 +211,18 @@ input[type="radio"].visually-hidden {
 	
 .description {
   width: 205px;
-  padding-left: 50px;
   line-height: 23px;
   font-size: 16px;
   font-style: italic;
   color: #ee3643;
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
-}
-
-.about {
-   outline: 1px solid black;
+  margin-left: 50px;
+  
 }
 
 .contacts {
   position: relative;
-  outline: 1px solid black;
-  
 }
 
 .contacts a {
@@ -235,9 +237,11 @@ input[type="radio"].visually-hidden {
 }
 
 .address {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  text-align: center;
 }
 
 .contacts a::before {
@@ -255,9 +259,159 @@ input[type="radio"].visually-hidden {
 }
 
 .user-link-list {
-  outline: 1px solid black;
+  
   display: flex;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.user-link-list li {
+  position: relative;
+}
+
+.user-link-list a {
+  
+  display: block;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  background-color: #fff;
+  
+}
+
+.user-link-list .login {
+  padding: 12px 25px 12px 47px;
+  margin-right: 10px;
+}
+
+.user-link-list .login::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  background-image: url(../svg/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 15px;
+  top: 14px;
+}
+
+.user-link-list .registration {
+  padding: 12px 25px;
+}
+
+.site-navigation {
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+  background-color: #293449;
+}
+
+.navigation-list a {
+  display: block;
+  padding: 19px 30px;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.promo {
+  margin-bottom: 20px;
+  outline: 1px solid black;
+}
+
+.promo-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid black;
+  
+}
+
+.promo-item {
+  width: 300px;
+  outline: 1px solid black;
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+  
+.promo-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  outline: 1px solid black;
+  margin-left: 24px;
+}
+
+.promo-motto {
+  width: 135px;
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+  background-color: rgba(0, 0, 0 , 0.1);
+  
+  text-align: center;
+  
+}
+
+
+.promo-motto a {
+  display: block;
+}
+
+.materials {
+  background-color: #f6b22d;
+}
+
+.tools {
+  background-color: #4aafde;
+}
+
+.mechanisms {
+  background-color: #cc79d1;
+}
+
+.promo-other-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  outline: 1px solid black;
+  width: 620px;
+}
+
+.promo-other-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sales {
+  background-color: #85d179;
+}
+
+.delivery {
+  background-color: #f6b22d;
 }
