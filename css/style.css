@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   width: 100%;
   background-color: #f4f7f9;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .main-header h1 {
@@ -331,7 +331,7 @@ input[type="radio"].visually-hidden {
 
 .promo {
   margin-bottom: 20px;
-  outline: 1px solid black;
+ 
 }
 
 .promo-list {
@@ -342,31 +342,35 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 1px solid black;
+  
   
 }
 
 .promo-item {
   width: 300px;
-  outline: 1px solid black;
+  
   position: relative;
-  margin-bottom: 20px;
+  
+  padding: 21px 23px;
+  box-sizing: border-box;
   
 }
   
 .promo-item h3 {
   font-size: 24px;
   line-height: 30px;
-  color: #fff;
-  outline: 1px solid black;
-  margin-left: 24px;
+  color: #fff; 
+  margin: 0;
+  margin-bottom: 14px;	
+  
+  
 }
 
 .promo-motto {
   width: 135px;
   padding: 0;
   margin: 0;
-  margin-left: 25px;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0 , 0.1);
   
   text-align: center;
@@ -374,20 +378,81 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 .promo-motto a {
   display: block;
+  padding: 10px 0;
+  text-transform: uppercase;
 }
+
+.promo-motto a:hover,
+.promo-motto a:focus {
+	background-color: rgba(0, 0, 0 , 0.2);
+	border-radius: 5px;
+}
+	
 
 .materials {
   background-color: #f6b22d;
 }
 
+.materials::before {
+	content: "";
+	position: absolute;
+	left: 212px;
+	top: 31px;
+	width: 44px;
+	height: 65px;
+	background-image: url(../svg/icon-1.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	
+}
+
+.materials::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+	height: 59px;
+	background-image: url(../img/new-flag.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	
+}
+
+
 .tools {
   background-color: #4aafde;
 }
 
+.tools::before {
+	content: "";
+	position: absolute;
+	right: 29px;
+	top: 31px;
+	width: 75px;
+	height: 61px;
+	background-image: url(../svg/icon-2.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 .mechanisms {
   background-color: #cc79d1;
+}
+
+.mechanisms::before {
+	content: "";
+	position: absolute;
+	right: 29px;
+	top: 31px;
+	width: 78px;
+	height: 62px;
+	background-image: url(../svg/icon-3.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .promo-other-container {
@@ -395,14 +460,34 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.slider {
+.slider-wrapper {
   outline: 1px solid black;
+  position: relative;
+  min-height: 100px;
   width: 620px;
+  background-color: rgba(1, 255, 1, 0.2);
+}
+
+.slider {
+	background-color: rgba(255, 0, 1, 0.2);
+}
+
+.slides {
+	background-color: orange;
+}
+
+.slide1 {
+	width: inherit;
+	height: inherit;
+	background-image: url(../img/bosch-bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .promo-other-list {
   display: flex;
   flex-direction: column;
+  
   margin: 0;
   padding: 0;
   list-style: none;
@@ -410,8 +495,34 @@ input[type="radio"].visually-hidden {
 
 .sales {
   background-color: #85d179;
+  margin-bottom: 20px;
+}
+
+.sales::before {
+  content: "";
+	position: absolute;
+	right: 40px;
+	top: 29px;
+	width: 59px;
+	height: 72px;
+	background-image: url(../svg/icon-4.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .delivery {
   background-color: #f6b22d;
+}
+
+.delivery::before {
+	content: "";
+	position: absolute;
+	right: 29px;
+	top: 31px;
+	width: 78px;
+	height: 63px;
+	background-image: url(../svg/icon-5.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 }
