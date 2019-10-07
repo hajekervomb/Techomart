@@ -93,8 +93,9 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   width: 100%;
-  background-color: #f4f7f9;
-  margin-bottom: 120px;
+  background-color: #f1f5f7;;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .main-header h1 {
@@ -457,69 +458,103 @@ input[type="radio"].visually-hidden {
 
 .promo-other {
 	margin-bottom: 40px;
-}
-
-.promo-other-container {
   display: flex;
   justify-content: space-between;
 }
 
 .slider-wrapper {
-  outline: 1px solid black;
   position: relative;
-  height: 266px;
   width: 620px;
-
+  height: 266px;
 }
 
 .slider-wrapper input {
   display: none;
 }
 
-.slider {
-	position: relative;
+.slider-list {
   width: inherit;
   height: inherit;
-  overflow: hidden;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #ddd;
   
 }
 
-.slides {
+.slider-item {
+  display: none;
 	position: absolute;
   width: inherit;
   height: inherit;
+  color: #fff;
 }
 
-.slide1 {
+.slider-description {
+  background-color: rgba(0,0,0,.2);
+  padding: 23px 25px;
+}
+
+.slider-item h3 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.slider-item span {
+  display: block;
+  
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.slider-item a {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  margin-top: 102px;
+  margin-left: 26px;
+  background-color: #ee3643;
+  width: 195px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.slider-item:nth-child(1) {
 	
 	background-image: url(../img/bosch-top.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
-.slide2 {
+.slider-item:nth-child(2) {
   
   background-image: url(../img/bosch-bottom.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.slider-wrapper .controls {
+.slider-wrapper .slider-controls {
   position: absolute;
   left: 290px;
   bottom: 42px;
+  
 }
 
 .slider-controls label {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #fff;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
 }
 
 .slider-controls label:nth-of-type(1) {
@@ -528,20 +563,23 @@ input[type="radio"].visually-hidden {
 
 #slide1:checked ~ .slider-controls label:nth-of-type(1),
 #slide2:checked ~ .slider-controls label:nth-of-type(2) {
-  background-color: red;
+  background-color: #ee3643;
 }
-/*
-.slider-wrapper label::after {
-  content: "";
-  position: absolute;
-  left: -4px;
-  top: -4px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid #fff;
-  border-radius: 50%;
+
+#slide1:checked ~ .promo-other .slider-item:nth-child(1)
+#slide2:checked ~ .promo-other .slider-item:nth-child(2) {
+  display: block;
+  
 }
-*/
+
+.slider-buttons label {
+  
+}
+
+.slider-buttons label:nth-child(2) {
+  
+}
+
 .promo-other-list {
   display: flex;
   flex-direction: column;
@@ -586,13 +624,14 @@ input[type="radio"].visually-hidden {
 
 .popular-goods {
 	margin-bottom: 40px;
+  
 }
 
 .heading {
 	display: flex;
 	justify-content: space-between; 
 	padding: 28px;
-	background-color: rgba(255, 0, 0, 0.2);
+	background-color: #F7F3EC;
 	margin-bottom: 20px;
 }
 
@@ -604,10 +643,10 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-.heading .button {
+ .button {
 	width: 253px;
 	padding: 10px 0;
-	background-color: red;
+	background-color: #ee3643;
 	color: #fff;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -645,7 +684,7 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	width: 220px;
 	min-height: 250px;
-	background-color: rgba(255, 0, 0, 0.2);
+	outline: 1px solid #F7F3EC;
 	position: relative;
 	
 }
@@ -705,7 +744,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	position: absolute;
 	top: 0px;
-	right: -20px;
+	right: -19px;
 	width: 0;
 	height: 0;
 	border: 19px solid white;
